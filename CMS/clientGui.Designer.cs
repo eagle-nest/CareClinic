@@ -46,14 +46,6 @@
             this.appointmentLabel = new System.Windows.Forms.Label();
             this.patientLabel = new System.Windows.Forms.Label();
             this.patientPanel = new System.Windows.Forms.Panel();
-            this.patientRecordPanel = new System.Windows.Forms.Panel();
-            this.patientRecordSearchButton = new System.Windows.Forms.Button();
-            this.patientRecordSearchErrorLabel = new System.Windows.Forms.Label();
-            this.patientRecordSearchLabel = new System.Windows.Forms.Label();
-            this.patientRecordSearchTextBox = new System.Windows.Forms.TextBox();
-            this.patientRecordUpdateButton = new System.Windows.Forms.Button();
-            this.patientRecordDeleteButton = new System.Windows.Forms.Button();
-            this.patientRecordDataGridView = new System.Windows.Forms.DataGridView();
             this.newPatientFormPanel = new System.Windows.Forms.Panel();
             this.patientFormCencelButton = new System.Windows.Forms.Button();
             this.patientFormSaveButton = new System.Windows.Forms.Button();
@@ -77,19 +69,19 @@
             this.patientIdTextBox = new System.Windows.Forms.TextBox();
             this.patientIdLabel = new System.Windows.Forms.Label();
             this.patientPictureBox = new System.Windows.Forms.PictureBox();
+            this.patientRecordPanel = new System.Windows.Forms.Panel();
+            this.patientRecordSearchButton = new System.Windows.Forms.Button();
+            this.patientRecordSearchErrorLabel = new System.Windows.Forms.Label();
+            this.patientRecordSearchLabel = new System.Windows.Forms.Label();
+            this.patientRecordSearchTextBox = new System.Windows.Forms.TextBox();
+            this.patientRecordUpdateButton = new System.Windows.Forms.Button();
+            this.patientRecordDeleteButton = new System.Windows.Forms.Button();
+            this.patientRecordDataGridView = new System.Windows.Forms.DataGridView();
             this.patientHeaderPanel = new System.Windows.Forms.Panel();
             this.patientRecordLabel = new System.Windows.Forms.Label();
             this.newPatientLabel = new System.Windows.Forms.Label();
             this.patientHeadingLabel = new System.Windows.Forms.Label();
             this.appointmentPanel = new System.Windows.Forms.Panel();
-            this.appointmentRecordPanel = new System.Windows.Forms.Panel();
-            this.appointmentRecordSearchButton = new System.Windows.Forms.Button();
-            this.appointmentRecordSearchErrorLabel = new System.Windows.Forms.Label();
-            this.appointmentRecordSearchLabel = new System.Windows.Forms.Label();
-            this.appointmentRecordSearchTextBox = new System.Windows.Forms.TextBox();
-            this.appointmentRecordUpdateButton = new System.Windows.Forms.Button();
-            this.appointmentRecordDeleteButton = new System.Windows.Forms.Button();
-            this.appointmentRecordDataGridView = new System.Windows.Forms.DataGridView();
             this.newAppointmentPanel = new System.Windows.Forms.Panel();
             this.appointmentPatientWeightTextBox = new System.Windows.Forms.TextBox();
             this.appointmentPatientWeightLabel = new System.Windows.Forms.Label();
@@ -103,6 +95,14 @@
             this.appointmentRefferDoctorLabel = new System.Windows.Forms.Label();
             this.appointmentIdTextBox = new System.Windows.Forms.TextBox();
             this.appointmentIdLabel = new System.Windows.Forms.Label();
+            this.appointmentRecordPanel = new System.Windows.Forms.Panel();
+            this.appointmentRecordSearchButton = new System.Windows.Forms.Button();
+            this.appointmentRecordSearchErrorLabel = new System.Windows.Forms.Label();
+            this.appointmentRecordSearchLabel = new System.Windows.Forms.Label();
+            this.appointmentRecordSearchTextBox = new System.Windows.Forms.TextBox();
+            this.appointmentRecordUpdateButton = new System.Windows.Forms.Button();
+            this.appointmentRecordDeleteButton = new System.Windows.Forms.Button();
+            this.appointmentRecordDataGridView = new System.Windows.Forms.DataGridView();
             this.appointmentHeadingPanel = new System.Windows.Forms.Panel();
             this.appointmentHeadingLabel = new System.Windows.Forms.Label();
             this.appointmentRecordLabel = new System.Windows.Forms.Label();
@@ -202,19 +202,22 @@
             this.reportsHeadingLabel = new System.Windows.Forms.Label();
             this.clockLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.reportDataGridView = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuBar.SuspendLayout();
             this.clinicPanel.SuspendLayout();
             this.patientPanel.SuspendLayout();
-            this.patientRecordPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientRecordDataGridView)).BeginInit();
             this.newPatientFormPanel.SuspendLayout();
             this.patientGenderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patientPictureBox)).BeginInit();
+            this.patientRecordPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patientRecordDataGridView)).BeginInit();
             this.patientHeaderPanel.SuspendLayout();
             this.appointmentPanel.SuspendLayout();
+            this.newAppointmentPanel.SuspendLayout();
             this.appointmentRecordPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentRecordDataGridView)).BeginInit();
-            this.newAppointmentPanel.SuspendLayout();
             this.appointmentHeadingPanel.SuspendLayout();
             this.doctorPanel.SuspendLayout();
             this.doctorRecordPanel.SuspendLayout();
@@ -234,6 +237,8 @@
             this.settingHeadingPanel.SuspendLayout();
             this.reportsPanel.SuspendLayout();
             this.reportsHeadingPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reportDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // clinicToolStripMenuItem
@@ -436,105 +441,6 @@
             this.patientPanel.Name = "patientPanel";
             this.patientPanel.Size = new System.Drawing.Size(1161, 577);
             this.patientPanel.TabIndex = 15;
-            // 
-            // patientRecordPanel
-            // 
-            this.patientRecordPanel.Controls.Add(this.patientRecordSearchButton);
-            this.patientRecordPanel.Controls.Add(this.patientRecordSearchErrorLabel);
-            this.patientRecordPanel.Controls.Add(this.patientRecordSearchLabel);
-            this.patientRecordPanel.Controls.Add(this.patientRecordSearchTextBox);
-            this.patientRecordPanel.Controls.Add(this.patientRecordUpdateButton);
-            this.patientRecordPanel.Controls.Add(this.patientRecordDeleteButton);
-            this.patientRecordPanel.Controls.Add(this.patientRecordDataGridView);
-            this.patientRecordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patientRecordPanel.Location = new System.Drawing.Point(0, 63);
-            this.patientRecordPanel.Name = "patientRecordPanel";
-            this.patientRecordPanel.Size = new System.Drawing.Size(1161, 514);
-            this.patientRecordPanel.TabIndex = 25;
-            // 
-            // patientRecordSearchButton
-            // 
-            this.patientRecordSearchButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.patientRecordSearchButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.patientRecordSearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patientRecordSearchButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.patientRecordSearchButton.Location = new System.Drawing.Point(716, 27);
-            this.patientRecordSearchButton.Name = "patientRecordSearchButton";
-            this.patientRecordSearchButton.Size = new System.Drawing.Size(75, 23);
-            this.patientRecordSearchButton.TabIndex = 47;
-            this.patientRecordSearchButton.Text = "Search";
-            this.patientRecordSearchButton.UseVisualStyleBackColor = false;
-            // 
-            // patientRecordSearchErrorLabel
-            // 
-            this.patientRecordSearchErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.patientRecordSearchErrorLabel.AutoSize = true;
-            this.patientRecordSearchErrorLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.patientRecordSearchErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.patientRecordSearchErrorLabel.Location = new System.Drawing.Point(204, 57);
-            this.patientRecordSearchErrorLabel.Name = "patientRecordSearchErrorLabel";
-            this.patientRecordSearchErrorLabel.Size = new System.Drawing.Size(28, 13);
-            this.patientRecordSearchErrorLabel.TabIndex = 46;
-            this.patientRecordSearchErrorLabel.Text = "error";
-            this.patientRecordSearchErrorLabel.Visible = false;
-            // 
-            // patientRecordSearchLabel
-            // 
-            this.patientRecordSearchLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.patientRecordSearchLabel.AutoSize = true;
-            this.patientRecordSearchLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.patientRecordSearchLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.patientRecordSearchLabel.Location = new System.Drawing.Point(418, 31);
-            this.patientRecordSearchLabel.Name = "patientRecordSearchLabel";
-            this.patientRecordSearchLabel.Size = new System.Drawing.Size(84, 13);
-            this.patientRecordSearchLabel.TabIndex = 45;
-            this.patientRecordSearchLabel.Text = "Search keyword";
-            // 
-            // patientRecordSearchTextBox
-            // 
-            this.patientRecordSearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.patientRecordSearchTextBox.BackColor = System.Drawing.Color.DarkKhaki;
-            this.patientRecordSearchTextBox.Enabled = false;
-            this.patientRecordSearchTextBox.Location = new System.Drawing.Point(515, 28);
-            this.patientRecordSearchTextBox.Name = "patientRecordSearchTextBox";
-            this.patientRecordSearchTextBox.Size = new System.Drawing.Size(165, 20);
-            this.patientRecordSearchTextBox.TabIndex = 44;
-            this.patientRecordSearchTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // patientRecordUpdateButton
-            // 
-            this.patientRecordUpdateButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.patientRecordUpdateButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.patientRecordUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patientRecordUpdateButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.patientRecordUpdateButton.Location = new System.Drawing.Point(732, 469);
-            this.patientRecordUpdateButton.Name = "patientRecordUpdateButton";
-            this.patientRecordUpdateButton.Size = new System.Drawing.Size(75, 23);
-            this.patientRecordUpdateButton.TabIndex = 43;
-            this.patientRecordUpdateButton.Text = "Update";
-            this.patientRecordUpdateButton.UseVisualStyleBackColor = false;
-            // 
-            // patientRecordDeleteButton
-            // 
-            this.patientRecordDeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.patientRecordDeleteButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.patientRecordDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patientRecordDeleteButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.patientRecordDeleteButton.Location = new System.Drawing.Point(859, 469);
-            this.patientRecordDeleteButton.Name = "patientRecordDeleteButton";
-            this.patientRecordDeleteButton.Size = new System.Drawing.Size(75, 23);
-            this.patientRecordDeleteButton.TabIndex = 42;
-            this.patientRecordDeleteButton.Text = "Delete";
-            this.patientRecordDeleteButton.UseVisualStyleBackColor = false;
-            // 
-            // patientRecordDataGridView
-            // 
-            this.patientRecordDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.patientRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.patientRecordDataGridView.Location = new System.Drawing.Point(184, 76);
-            this.patientRecordDataGridView.Name = "patientRecordDataGridView";
-            this.patientRecordDataGridView.Size = new System.Drawing.Size(821, 371);
-            this.patientRecordDataGridView.TabIndex = 0;
             // 
             // newPatientFormPanel
             // 
@@ -801,6 +707,105 @@
             this.patientPictureBox.TabStop = false;
             this.patientPictureBox.Click += new System.EventHandler(this.patientPictureBox_Click);
             // 
+            // patientRecordPanel
+            // 
+            this.patientRecordPanel.Controls.Add(this.patientRecordSearchButton);
+            this.patientRecordPanel.Controls.Add(this.patientRecordSearchErrorLabel);
+            this.patientRecordPanel.Controls.Add(this.patientRecordSearchLabel);
+            this.patientRecordPanel.Controls.Add(this.patientRecordSearchTextBox);
+            this.patientRecordPanel.Controls.Add(this.patientRecordUpdateButton);
+            this.patientRecordPanel.Controls.Add(this.patientRecordDeleteButton);
+            this.patientRecordPanel.Controls.Add(this.patientRecordDataGridView);
+            this.patientRecordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patientRecordPanel.Location = new System.Drawing.Point(0, 63);
+            this.patientRecordPanel.Name = "patientRecordPanel";
+            this.patientRecordPanel.Size = new System.Drawing.Size(1161, 514);
+            this.patientRecordPanel.TabIndex = 25;
+            // 
+            // patientRecordSearchButton
+            // 
+            this.patientRecordSearchButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.patientRecordSearchButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.patientRecordSearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientRecordSearchButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.patientRecordSearchButton.Location = new System.Drawing.Point(716, 27);
+            this.patientRecordSearchButton.Name = "patientRecordSearchButton";
+            this.patientRecordSearchButton.Size = new System.Drawing.Size(75, 23);
+            this.patientRecordSearchButton.TabIndex = 47;
+            this.patientRecordSearchButton.Text = "Search";
+            this.patientRecordSearchButton.UseVisualStyleBackColor = false;
+            // 
+            // patientRecordSearchErrorLabel
+            // 
+            this.patientRecordSearchErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.patientRecordSearchErrorLabel.AutoSize = true;
+            this.patientRecordSearchErrorLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.patientRecordSearchErrorLabel.ForeColor = System.Drawing.Color.Red;
+            this.patientRecordSearchErrorLabel.Location = new System.Drawing.Point(204, 57);
+            this.patientRecordSearchErrorLabel.Name = "patientRecordSearchErrorLabel";
+            this.patientRecordSearchErrorLabel.Size = new System.Drawing.Size(28, 13);
+            this.patientRecordSearchErrorLabel.TabIndex = 46;
+            this.patientRecordSearchErrorLabel.Text = "error";
+            this.patientRecordSearchErrorLabel.Visible = false;
+            // 
+            // patientRecordSearchLabel
+            // 
+            this.patientRecordSearchLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.patientRecordSearchLabel.AutoSize = true;
+            this.patientRecordSearchLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.patientRecordSearchLabel.ForeColor = System.Drawing.Color.PeachPuff;
+            this.patientRecordSearchLabel.Location = new System.Drawing.Point(418, 31);
+            this.patientRecordSearchLabel.Name = "patientRecordSearchLabel";
+            this.patientRecordSearchLabel.Size = new System.Drawing.Size(84, 13);
+            this.patientRecordSearchLabel.TabIndex = 45;
+            this.patientRecordSearchLabel.Text = "Search keyword";
+            // 
+            // patientRecordSearchTextBox
+            // 
+            this.patientRecordSearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.patientRecordSearchTextBox.BackColor = System.Drawing.Color.DarkKhaki;
+            this.patientRecordSearchTextBox.Enabled = false;
+            this.patientRecordSearchTextBox.Location = new System.Drawing.Point(515, 28);
+            this.patientRecordSearchTextBox.Name = "patientRecordSearchTextBox";
+            this.patientRecordSearchTextBox.Size = new System.Drawing.Size(165, 20);
+            this.patientRecordSearchTextBox.TabIndex = 44;
+            this.patientRecordSearchTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // patientRecordUpdateButton
+            // 
+            this.patientRecordUpdateButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.patientRecordUpdateButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.patientRecordUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientRecordUpdateButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.patientRecordUpdateButton.Location = new System.Drawing.Point(732, 469);
+            this.patientRecordUpdateButton.Name = "patientRecordUpdateButton";
+            this.patientRecordUpdateButton.Size = new System.Drawing.Size(75, 23);
+            this.patientRecordUpdateButton.TabIndex = 43;
+            this.patientRecordUpdateButton.Text = "Update";
+            this.patientRecordUpdateButton.UseVisualStyleBackColor = false;
+            // 
+            // patientRecordDeleteButton
+            // 
+            this.patientRecordDeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.patientRecordDeleteButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.patientRecordDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientRecordDeleteButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.patientRecordDeleteButton.Location = new System.Drawing.Point(859, 469);
+            this.patientRecordDeleteButton.Name = "patientRecordDeleteButton";
+            this.patientRecordDeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.patientRecordDeleteButton.TabIndex = 42;
+            this.patientRecordDeleteButton.Text = "Delete";
+            this.patientRecordDeleteButton.UseVisualStyleBackColor = false;
+            // 
+            // patientRecordDataGridView
+            // 
+            this.patientRecordDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.patientRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.patientRecordDataGridView.Location = new System.Drawing.Point(184, 76);
+            this.patientRecordDataGridView.Name = "patientRecordDataGridView";
+            this.patientRecordDataGridView.Size = new System.Drawing.Size(821, 371);
+            this.patientRecordDataGridView.TabIndex = 0;
+            // 
             // patientHeaderPanel
             // 
             this.patientHeaderPanel.Controls.Add(this.patientRecordLabel);
@@ -864,105 +869,6 @@
             this.appointmentPanel.Name = "appointmentPanel";
             this.appointmentPanel.Size = new System.Drawing.Size(1161, 577);
             this.appointmentPanel.TabIndex = 13;
-            // 
-            // appointmentRecordPanel
-            // 
-            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordSearchButton);
-            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordSearchErrorLabel);
-            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordSearchLabel);
-            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordSearchTextBox);
-            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordUpdateButton);
-            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordDeleteButton);
-            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordDataGridView);
-            this.appointmentRecordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.appointmentRecordPanel.Location = new System.Drawing.Point(0, 63);
-            this.appointmentRecordPanel.Name = "appointmentRecordPanel";
-            this.appointmentRecordPanel.Size = new System.Drawing.Size(1161, 514);
-            this.appointmentRecordPanel.TabIndex = 28;
-            // 
-            // appointmentRecordSearchButton
-            // 
-            this.appointmentRecordSearchButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.appointmentRecordSearchButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.appointmentRecordSearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appointmentRecordSearchButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.appointmentRecordSearchButton.Location = new System.Drawing.Point(716, 27);
-            this.appointmentRecordSearchButton.Name = "appointmentRecordSearchButton";
-            this.appointmentRecordSearchButton.Size = new System.Drawing.Size(75, 23);
-            this.appointmentRecordSearchButton.TabIndex = 47;
-            this.appointmentRecordSearchButton.Text = "Search";
-            this.appointmentRecordSearchButton.UseVisualStyleBackColor = false;
-            // 
-            // appointmentRecordSearchErrorLabel
-            // 
-            this.appointmentRecordSearchErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.appointmentRecordSearchErrorLabel.AutoSize = true;
-            this.appointmentRecordSearchErrorLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.appointmentRecordSearchErrorLabel.ForeColor = System.Drawing.Color.Red;
-            this.appointmentRecordSearchErrorLabel.Location = new System.Drawing.Point(204, 57);
-            this.appointmentRecordSearchErrorLabel.Name = "appointmentRecordSearchErrorLabel";
-            this.appointmentRecordSearchErrorLabel.Size = new System.Drawing.Size(28, 13);
-            this.appointmentRecordSearchErrorLabel.TabIndex = 46;
-            this.appointmentRecordSearchErrorLabel.Text = "error";
-            this.appointmentRecordSearchErrorLabel.Visible = false;
-            // 
-            // appointmentRecordSearchLabel
-            // 
-            this.appointmentRecordSearchLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.appointmentRecordSearchLabel.AutoSize = true;
-            this.appointmentRecordSearchLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.appointmentRecordSearchLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.appointmentRecordSearchLabel.Location = new System.Drawing.Point(418, 31);
-            this.appointmentRecordSearchLabel.Name = "appointmentRecordSearchLabel";
-            this.appointmentRecordSearchLabel.Size = new System.Drawing.Size(84, 13);
-            this.appointmentRecordSearchLabel.TabIndex = 45;
-            this.appointmentRecordSearchLabel.Text = "Search keyword";
-            // 
-            // appointmentRecordSearchTextBox
-            // 
-            this.appointmentRecordSearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.appointmentRecordSearchTextBox.BackColor = System.Drawing.Color.DarkKhaki;
-            this.appointmentRecordSearchTextBox.Enabled = false;
-            this.appointmentRecordSearchTextBox.Location = new System.Drawing.Point(515, 28);
-            this.appointmentRecordSearchTextBox.Name = "appointmentRecordSearchTextBox";
-            this.appointmentRecordSearchTextBox.Size = new System.Drawing.Size(165, 20);
-            this.appointmentRecordSearchTextBox.TabIndex = 44;
-            this.appointmentRecordSearchTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // appointmentRecordUpdateButton
-            // 
-            this.appointmentRecordUpdateButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.appointmentRecordUpdateButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.appointmentRecordUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appointmentRecordUpdateButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.appointmentRecordUpdateButton.Location = new System.Drawing.Point(732, 469);
-            this.appointmentRecordUpdateButton.Name = "appointmentRecordUpdateButton";
-            this.appointmentRecordUpdateButton.Size = new System.Drawing.Size(75, 23);
-            this.appointmentRecordUpdateButton.TabIndex = 43;
-            this.appointmentRecordUpdateButton.Text = "Update";
-            this.appointmentRecordUpdateButton.UseVisualStyleBackColor = false;
-            // 
-            // appointmentRecordDeleteButton
-            // 
-            this.appointmentRecordDeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.appointmentRecordDeleteButton.BackColor = System.Drawing.Color.SaddleBrown;
-            this.appointmentRecordDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appointmentRecordDeleteButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.appointmentRecordDeleteButton.Location = new System.Drawing.Point(859, 469);
-            this.appointmentRecordDeleteButton.Name = "appointmentRecordDeleteButton";
-            this.appointmentRecordDeleteButton.Size = new System.Drawing.Size(75, 23);
-            this.appointmentRecordDeleteButton.TabIndex = 42;
-            this.appointmentRecordDeleteButton.Text = "Delete";
-            this.appointmentRecordDeleteButton.UseVisualStyleBackColor = false;
-            // 
-            // appointmentRecordDataGridView
-            // 
-            this.appointmentRecordDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.appointmentRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.appointmentRecordDataGridView.Location = new System.Drawing.Point(184, 76);
-            this.appointmentRecordDataGridView.Name = "appointmentRecordDataGridView";
-            this.appointmentRecordDataGridView.Size = new System.Drawing.Size(821, 371);
-            this.appointmentRecordDataGridView.TabIndex = 0;
             // 
             // newAppointmentPanel
             // 
@@ -1120,6 +1026,105 @@
             this.appointmentIdLabel.Size = new System.Drawing.Size(80, 13);
             this.appointmentIdLabel.TabIndex = 38;
             this.appointmentIdLabel.Text = "Appointment ID";
+            // 
+            // appointmentRecordPanel
+            // 
+            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordSearchButton);
+            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordSearchErrorLabel);
+            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordSearchLabel);
+            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordSearchTextBox);
+            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordUpdateButton);
+            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordDeleteButton);
+            this.appointmentRecordPanel.Controls.Add(this.appointmentRecordDataGridView);
+            this.appointmentRecordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.appointmentRecordPanel.Location = new System.Drawing.Point(0, 63);
+            this.appointmentRecordPanel.Name = "appointmentRecordPanel";
+            this.appointmentRecordPanel.Size = new System.Drawing.Size(1161, 514);
+            this.appointmentRecordPanel.TabIndex = 28;
+            // 
+            // appointmentRecordSearchButton
+            // 
+            this.appointmentRecordSearchButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.appointmentRecordSearchButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.appointmentRecordSearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appointmentRecordSearchButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.appointmentRecordSearchButton.Location = new System.Drawing.Point(716, 27);
+            this.appointmentRecordSearchButton.Name = "appointmentRecordSearchButton";
+            this.appointmentRecordSearchButton.Size = new System.Drawing.Size(75, 23);
+            this.appointmentRecordSearchButton.TabIndex = 47;
+            this.appointmentRecordSearchButton.Text = "Search";
+            this.appointmentRecordSearchButton.UseVisualStyleBackColor = false;
+            // 
+            // appointmentRecordSearchErrorLabel
+            // 
+            this.appointmentRecordSearchErrorLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.appointmentRecordSearchErrorLabel.AutoSize = true;
+            this.appointmentRecordSearchErrorLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.appointmentRecordSearchErrorLabel.ForeColor = System.Drawing.Color.Red;
+            this.appointmentRecordSearchErrorLabel.Location = new System.Drawing.Point(204, 57);
+            this.appointmentRecordSearchErrorLabel.Name = "appointmentRecordSearchErrorLabel";
+            this.appointmentRecordSearchErrorLabel.Size = new System.Drawing.Size(28, 13);
+            this.appointmentRecordSearchErrorLabel.TabIndex = 46;
+            this.appointmentRecordSearchErrorLabel.Text = "error";
+            this.appointmentRecordSearchErrorLabel.Visible = false;
+            // 
+            // appointmentRecordSearchLabel
+            // 
+            this.appointmentRecordSearchLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.appointmentRecordSearchLabel.AutoSize = true;
+            this.appointmentRecordSearchLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.appointmentRecordSearchLabel.ForeColor = System.Drawing.Color.PeachPuff;
+            this.appointmentRecordSearchLabel.Location = new System.Drawing.Point(418, 31);
+            this.appointmentRecordSearchLabel.Name = "appointmentRecordSearchLabel";
+            this.appointmentRecordSearchLabel.Size = new System.Drawing.Size(84, 13);
+            this.appointmentRecordSearchLabel.TabIndex = 45;
+            this.appointmentRecordSearchLabel.Text = "Search keyword";
+            // 
+            // appointmentRecordSearchTextBox
+            // 
+            this.appointmentRecordSearchTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.appointmentRecordSearchTextBox.BackColor = System.Drawing.Color.DarkKhaki;
+            this.appointmentRecordSearchTextBox.Enabled = false;
+            this.appointmentRecordSearchTextBox.Location = new System.Drawing.Point(515, 28);
+            this.appointmentRecordSearchTextBox.Name = "appointmentRecordSearchTextBox";
+            this.appointmentRecordSearchTextBox.Size = new System.Drawing.Size(165, 20);
+            this.appointmentRecordSearchTextBox.TabIndex = 44;
+            this.appointmentRecordSearchTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // appointmentRecordUpdateButton
+            // 
+            this.appointmentRecordUpdateButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.appointmentRecordUpdateButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.appointmentRecordUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appointmentRecordUpdateButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.appointmentRecordUpdateButton.Location = new System.Drawing.Point(732, 469);
+            this.appointmentRecordUpdateButton.Name = "appointmentRecordUpdateButton";
+            this.appointmentRecordUpdateButton.Size = new System.Drawing.Size(75, 23);
+            this.appointmentRecordUpdateButton.TabIndex = 43;
+            this.appointmentRecordUpdateButton.Text = "Update";
+            this.appointmentRecordUpdateButton.UseVisualStyleBackColor = false;
+            // 
+            // appointmentRecordDeleteButton
+            // 
+            this.appointmentRecordDeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.appointmentRecordDeleteButton.BackColor = System.Drawing.Color.SaddleBrown;
+            this.appointmentRecordDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appointmentRecordDeleteButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.appointmentRecordDeleteButton.Location = new System.Drawing.Point(859, 469);
+            this.appointmentRecordDeleteButton.Name = "appointmentRecordDeleteButton";
+            this.appointmentRecordDeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.appointmentRecordDeleteButton.TabIndex = 42;
+            this.appointmentRecordDeleteButton.Text = "Delete";
+            this.appointmentRecordDeleteButton.UseVisualStyleBackColor = false;
+            // 
+            // appointmentRecordDataGridView
+            // 
+            this.appointmentRecordDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.appointmentRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.appointmentRecordDataGridView.Location = new System.Drawing.Point(184, 76);
+            this.appointmentRecordDataGridView.Name = "appointmentRecordDataGridView";
+            this.appointmentRecordDataGridView.Size = new System.Drawing.Size(821, 371);
+            this.appointmentRecordDataGridView.TabIndex = 0;
             // 
             // appointmentHeadingPanel
             // 
@@ -2244,6 +2249,7 @@
             // reportsPanel
             // 
             this.reportsPanel.BackColor = System.Drawing.Color.Black;
+            this.reportsPanel.Controls.Add(this.panel1);
             this.reportsPanel.Controls.Add(this.reportsHeadingPanel);
             this.reportsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportsPanel.Location = new System.Drawing.Point(0, 24);
@@ -2332,17 +2338,48 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.reportDataGridView);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 63);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1161, 514);
+            this.panel1.TabIndex = 29;
+            // 
+            // reportDataGridView
+            // 
+            this.reportDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reportDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reportDataGridView.Location = new System.Drawing.Point(175, 96);
+            this.reportDataGridView.Name = "reportDataGridView";
+            this.reportDataGridView.Size = new System.Drawing.Size(821, 371);
+            this.reportDataGridView.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.ForeColor = System.Drawing.Color.PeachPuff;
+            this.label1.Location = new System.Drawing.Point(545, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Staff Salary";
+            // 
             // clientGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1161, 601);
+            this.Controls.Add(this.reportsPanel);
             this.Controls.Add(this.appointmentPanel);
             this.Controls.Add(this.doctorPanel);
             this.Controls.Add(this.patientPanel);
             this.Controls.Add(this.settingPanel);
             this.Controls.Add(this.staffPanel);
-            this.Controls.Add(this.reportsPanel);
             this.Controls.Add(this.clockLabel);
             this.Controls.Add(this.clinicPanel);
             this.Controls.Add(this.menuBar);
@@ -2356,22 +2393,22 @@
             this.clinicPanel.ResumeLayout(false);
             this.clinicPanel.PerformLayout();
             this.patientPanel.ResumeLayout(false);
-            this.patientRecordPanel.ResumeLayout(false);
-            this.patientRecordPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patientRecordDataGridView)).EndInit();
             this.newPatientFormPanel.ResumeLayout(false);
             this.newPatientFormPanel.PerformLayout();
             this.patientGenderPanel.ResumeLayout(false);
             this.patientGenderPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patientPictureBox)).EndInit();
+            this.patientRecordPanel.ResumeLayout(false);
+            this.patientRecordPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patientRecordDataGridView)).EndInit();
             this.patientHeaderPanel.ResumeLayout(false);
             this.patientHeaderPanel.PerformLayout();
             this.appointmentPanel.ResumeLayout(false);
+            this.newAppointmentPanel.ResumeLayout(false);
+            this.newAppointmentPanel.PerformLayout();
             this.appointmentRecordPanel.ResumeLayout(false);
             this.appointmentRecordPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentRecordDataGridView)).EndInit();
-            this.newAppointmentPanel.ResumeLayout(false);
-            this.newAppointmentPanel.PerformLayout();
             this.appointmentHeadingPanel.ResumeLayout(false);
             this.appointmentHeadingPanel.PerformLayout();
             this.doctorPanel.ResumeLayout(false);
@@ -2403,6 +2440,9 @@
             this.reportsPanel.ResumeLayout(false);
             this.reportsHeadingPanel.ResumeLayout(false);
             this.reportsHeadingPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reportDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2583,5 +2623,8 @@
         private System.Windows.Forms.Label staffSalleryLabel;
         private System.Windows.Forms.Label clockLabel;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView reportDataGridView;
+        private System.Windows.Forms.Label label1;
     }
 }
